@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#168f86">
-<meta name="description" content="Veranstaltungen für Was ist los in Heimburg und Umgebung anmelden.">
+<meta name="description" content="Veranstaltungen für Heimburg">
 <title>Veranstaltung anmelden</title>
 <style>
 :root{--paper:#fff;--paper2:#f3fbfa;--ink:#173d3d;--muted:#658282;--accent:#168f86;--accent-dark:#0d6f69;--gold:#f2b34d;--line:#d7e8e5;--danger:#b52b43;--shadow:0 12px 35px rgba(23,61,61,.10);--radius:22px}
@@ -32,7 +32,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin:18px 0 0}
 <body>
 <main class="container">
   <header class="hero">
-    <div class="kicker">Was ist los · Heimburg und Umgebung</div>
+    <div class="kicker">Was ist los in Heimburg</div>
     <h1>Veranstaltung anmelden</h1>
   </header>
   <section class="panel">
@@ -67,7 +67,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin:18px 0 0}
         <div class="form-group">
           <label for="publicCategory">Kategorie</label>
           <select id="publicCategory" name="Kategorie">
-            <option value="Kultur">Kultur</option><option value="Sport">Sport</option><option value="Feste & Feiern">Feste &amp; Feiern</option><option value="Musik">Musik</option><option value="Verein">Verein</option><option value="Sonstiges">Sonstiges</option>
+            <option value="Kultur">Kultur</option><option value="Sport">Sport</option><option value="Feste & Feiern">Feste &amp; Feiern</option><option value="Konzert">Konzert</option><option value="Sonstiges">Sonstiges</option>
           </select>
         </div>
         <div class="form-group">
@@ -75,8 +75,8 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin:18px 0 0}
           <input id="publicStart" name="Beginn" type="time" required>
         </div>
         <div class="form-group">
-          <label for="publicEnd">Ende (optional)</label>
-          <input id="publicEnd" name="Ende" type="time">
+          <label for="publicEnd">Ende <span class="required">*</span></label>
+          <input id="publicEnd" name="Ende" type="time"required>
         </div>
         <div class="form-group full">
           <label for="publicLocation">Veranstaltungsort <span class="required">*</span></label>
